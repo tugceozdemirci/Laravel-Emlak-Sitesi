@@ -1,5 +1,3 @@
-<html>
-<body>
 
 <footer id="aa-footer">
     <div class="container">
@@ -37,20 +35,18 @@
 </footer>
 <!-- jQuery library -->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-<script src="js/jquery.min.js"></script>
+<script src="{{asset('assets')}}/js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.js"></script>
+<script src="{{asset('assets')}}/js/bootstrap.js"></script>
 <!-- slick slider -->
-<script type="text/javascript" src="js/slick.js"></script>
+<script type="{{asset('assets')}}/text/javascript" src="js/slick.js"></script>
 <!-- Price picker slider -->
-<script type="text/javascript" src="js/nouislider.js"></script>
+<script type="{{asset('assets')}}/text/javascript" src="js/nouislider.js"></script>
 <!-- mixit slider -->
-<script type="text/javascript" src="js/jquery.mixitup.js"></script>
+<script type="{{asset('assets')}}/text/javascript" src="js/jquery.mixitup.js"></script>
 <!-- Add fancyBox -->
-<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<script type="{{asset('assets')}}/text/javascript" src="js/jquery.fancybox.pack.js"></script>
 <!-- Custom js -->
-<script src="js/custom.js"></script>
+<script src="{{asset('assets')}}/js/custom.js"></script>
 
-</body>
-</html>
 
