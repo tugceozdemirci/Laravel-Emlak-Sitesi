@@ -1,85 +1,711 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6289cc95-4cb0-460d-8bc1-1de36bb66863" name="Default Changelist" comment="template added">
-      <change afterPath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/images/favicon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/ie.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/buttons/icons/cross.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/buttons/icons/key.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/buttons/icons/tick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/buttons/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/buttons/screen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/fancy-type/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/fancy-type/screen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/icons/doc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/icons/email.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/icons/external.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/icons/feed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/icons/im.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/icons/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/icons/visited.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/icons/xls.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/screen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/rtl/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/rtl/screen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/print.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/screen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/src/forms.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/src/grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/src/grid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/src/ie.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/src/print.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/src/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/blueprint-css/src/typography.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/favicon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/_category.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
+    <list default="true" id="6289cc95-4cb0-460d-8bc1-1de36bb66863" name="Default Changelist" comment="template parçalama">
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/credits.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/pe-icon-7-stroke.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.blue.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.blue.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.default.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.green.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.green.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.pink.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.pink.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.pink.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.red.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.red.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.red.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.sea.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.sea.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.sea.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.violet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.violet.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/css/style.violet.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/fonts/Pe-icon-7-stroke.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/fonts/Pe-icon-7-stroke.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/fonts/Pe-icon-7-stroke.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/fonts/Pe-icon-7-stroke.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/blog-avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/blog-avatar2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/blog1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/blog2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/blog3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/jumbotron1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/marker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/marker.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/person-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/person-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/person-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/portfolio-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/portfolio-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/portfolio-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/portfolio-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/portfolio-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/portfolio-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/portfolio-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/portfolio-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/portfolio-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/img/template-mac.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/js/front.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/_theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/_3rd-party.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/_demo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/_general.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/_mixins-custom.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_background-variant.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_border-radius.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_box-shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_caret.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_gradients.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_grid-framework.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_hover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_lists.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_nav-divider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_reset-text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_resize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_size.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_table-row.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_text-emphasis.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_text-hide.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_text-truncate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_transition.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/modules/mixins/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/style.blue.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/style.default.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/style.green.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/style.pink.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/style.red.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/style.sea.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/scss/style.violet.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/text.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/jquery.cookie/MIT-LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/jquery.cookie/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/jquery.cookie/cookie.jquery.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/jquery.cookie/jquery.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/jquery/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/jquery/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/jquery/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/leaflet/images/layers-2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/leaflet/images/layers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/leaflet/images/marker-icon-2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/leaflet/images/marker-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/leaflet/images/marker-shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/leaflet/leaflet-src.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/leaflet/leaflet-src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/leaflet/leaflet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/leaflet/leaflet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/lightbox2/css/lightbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/lightbox2/css/lightbox.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/lightbox2/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/lightbox2/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/lightbox2/images/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/lightbox2/images/prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/lightbox2/js/lightbox-plus-jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/lightbox2/js/lightbox-plus-jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/lightbox2/js/lightbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/lightbox2/js/lightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/owl.carousel/assets/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/owl.carousel/assets/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/owl.carousel/assets/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/owl.carousel/assets/owl.theme.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/owl.carousel/assets/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/owl.carousel/assets/owl.theme.green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/owl.carousel/assets/owl.theme.green.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/owl.carousel/assets/owl.video.play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/owl.carousel/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/vendor/owl.carousel/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/pe-icon-7-stroke.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.blue.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.blue.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.default.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.green.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.green.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.pink.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.pink.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.pink.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.red.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.red.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.red.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.sea.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.sea.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.sea.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.violet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.violet.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.violet.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Pe-icon-7-stroke.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Pe-icon-7-stroke.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Pe-icon-7-stroke.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Pe-icon-7-stroke.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/blog-avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/blog-avatar2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/blog1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/blog2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/blog3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/favicon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/favicon2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/jumbotron1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/marker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/marker.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/person-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/person-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/person-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/slider/4_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/template-mac.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/front.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/_theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/_3rd-party.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/_demo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/_general.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/_mixins-custom.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_background-variant.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_border-radius.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_box-shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_caret.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_gradients.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_grid-framework.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_hover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_lists.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_nav-divider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_reset-text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_resize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_size.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_table-row.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_text-emphasis.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_text-hide.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_text-truncate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_transition.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/modules/mixins/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/style.blue.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/style.default.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/style.green.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/style.pink.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/style.red.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/style.sea.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/scss/style.violet.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/jquery.cookie/MIT-LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/jquery.cookie/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/jquery.cookie/cookie.jquery.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/jquery.cookie/jquery.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/jquery/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/jquery/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/jquery/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/leaflet/images/layers-2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/leaflet/images/layers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/leaflet/images/marker-icon-2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/leaflet/images/marker-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/leaflet/images/marker-shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/leaflet/leaflet-src.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/leaflet/leaflet-src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/leaflet/leaflet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/leaflet/leaflet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/lightbox2/css/lightbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/lightbox2/css/lightbox.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/lightbox2/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/lightbox2/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/lightbox2/images/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/lightbox2/images/prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/lightbox2/js/lightbox-plus-jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/lightbox2/js/lightbox-plus-jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/lightbox2/js/lightbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/lightbox2/js/lightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/owl.carousel/assets/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/owl.carousel/assets/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/owl.carousel/assets/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/owl.carousel/assets/owl.theme.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/owl.carousel/assets/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/owl.carousel/assets/owl.theme.green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/owl.carousel/assets/owl.theme.green.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/owl.carousel/assets/owl.video.play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/owl.carousel/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendor/owl.carousel/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/_menu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/images/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/ie.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/buttons/icons/cross.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/buttons/icons/key.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/buttons/icons/tick.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/buttons/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/buttons/screen.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/fancy-type/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/fancy-type/screen.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/link-icons/icons/doc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/link-icons/icons/email.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/link-icons/icons/external.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/link-icons/icons/feed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/link-icons/icons/im.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/link-icons/icons/pdf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/link-icons/icons/visited.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/link-icons/icons/xls.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/link-icons/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/link-icons/screen.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/rtl/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/plugins/rtl/screen.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/print.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/screen.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/src/forms.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/src/grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/src/grid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/src/ie.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/src/print.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/src/reset.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/blueprint-css/src/typography.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/assets/images/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/about-us.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/about-us.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/promo-banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/promo-banner.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/slider/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/slider/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/.sass-cache/24fa3457fef2c7a8dd499a16da444ff5da93fd79/_footer.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/.sass-cache/24fa3457fef2c7a8dd499a16da444ff5da93fd79/_header.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/.sass-cache/24fa3457fef2c7a8dd499a16da444ff5da93fd79/_nav.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/.sass-cache/92e65d89f02a31c41a04d8a86d76125d70b1e445/_buttons.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/.sass-cache/92e65d89f02a31c41a04d8a86d76125d70b1e445/_responsive.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/.sass-cache/92e65d89f02a31c41a04d8a86d76125d70b1e445/_sections.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/.sass-cache/92e65d89f02a31c41a04d8a86d76125d70b1e445/_theme-color.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/.sass-cache/92e65d89f02a31c41a04d8a86d76125d70b1e445/_typography.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/.sass-cache/b17cfc8f2f692ca944bdfcaed15220cf78b09c99/style.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/.sass-cache/d69ec8be0a74b90aa26ec05a08d2f01daa24c3bd/_base.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/.sass-cache/d69ec8be0a74b90aa26ec05a08d2f01daa24c3bd/_mixins.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/.sass-cache/d69ec8be0a74b90aa26ec05a08d2f01daa24c3bd/_variables.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/blog-archive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/blog-single.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/css/jquery.fancybox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/css/nouislider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/css/slick.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/css/theme-color/bridge-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/css/theme-color/dark-red-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/css/theme-color/default-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/css/theme-color/green-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/css/theme-color/orange-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/css/theme-color/pink-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/css/theme-color/purple-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/css/theme-color/red-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/css/theme-color/violet-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/css/theme-color/yellow-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/about-us.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/agents/agent-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/agents/agent-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/agents/agent-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/agents/agent-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/banner-ads.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/blog-img-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/blog-img-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/blog-img-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/client-brand-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/client-brand-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/client-brand-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/client-brand-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/client-brand-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/favicon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/big/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/big/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/big/11 - Copy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/big/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/big/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/big/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/big/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/big/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/big/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/big/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/big/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/big/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/fancybox_buttons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/fancybox_loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/fancybox_loading@2x.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/fancybox_overlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/fancybox_sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/fancybox_sprite@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/small/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/small/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/small/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/small/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/small/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/small/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/small/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/small/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/small/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/small/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/small/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/gallery/small/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/item/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/item/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/item/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/item/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/item/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/item/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/promo-banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/property-header-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/property-view-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/signin-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/slider/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/slider/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/slider/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/slider/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/slider/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/slider/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/testimonial-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/testimonial-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/testimonial-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/img/testimonial-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/js/jquery.fancybox.pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/js/jquery.mixitup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/js/nouislider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/js/slick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/properties-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/properties.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/scss/base/_base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/scss/base/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/scss/base/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/scss/layouts/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/scss/layouts/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/scss/layouts/_nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/scss/modules/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/scss/modules/_responsive.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/scss/modules/_sections.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/scss/modules/_theme-color.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/scss/modules/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/scss/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/Home Property/signin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/ie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/buttons/icons/cross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/buttons/icons/key.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/buttons/icons/tick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/buttons/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/buttons/screen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/fancy-type/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/fancy-type/screen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/icons/doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/icons/email.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/icons/external.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/icons/feed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/icons/im.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/icons/pdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/icons/visited.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/icons/xls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/screen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/rtl/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/plugins/rtl/screen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/screen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/src/forms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/src/grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/src/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/src/ie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/src/print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/src/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/blueprint-css/src/typography.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/assets/images/favicon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shAutoloader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushAS3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushAppleScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushBash.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushCSharp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushColdFusion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushCpp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushCss.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushDelphi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushDiff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushErlang.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushGroovy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushJScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushJava.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushJavaFX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushPerl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushPhp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushPlain.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushPowerShell.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushPython.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushRuby.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushSass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushScala.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushSql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushVb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushXml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/scripts/shLegacy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/styles/shCore.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/styles/shCoreDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/styles/shCoreDjango.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/styles/shCoreEclipse.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/styles/shCoreEmacs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/styles/shCoreFadeToGrey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/styles/shCoreMDUltra.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/styles/shCoreMidnight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/styles/shCoreRDark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/styles/shThemeDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/styles/shThemeDjango.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/styles/shThemeEclipse.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/styles/shThemeEmacs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/styles/shThemeFadeToGrey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/styles/shThemeMDUltra.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/styles/shThemeMidnight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/help/DOCUMENTATION/syntax-highlighter/styles/shThemeRDark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/emlakst/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/.sass-cache/24fa3457fef2c7a8dd499a16da444ff5da93fd79/_footer.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/.sass-cache/24fa3457fef2c7a8dd499a16da444ff5da93fd79/_header.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/.sass-cache/24fa3457fef2c7a8dd499a16da444ff5da93fd79/_nav.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/.sass-cache/92e65d89f02a31c41a04d8a86d76125d70b1e445/_buttons.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/.sass-cache/92e65d89f02a31c41a04d8a86d76125d70b1e445/_responsive.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/.sass-cache/92e65d89f02a31c41a04d8a86d76125d70b1e445/_sections.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/.sass-cache/92e65d89f02a31c41a04d8a86d76125d70b1e445/_theme-color.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/.sass-cache/92e65d89f02a31c41a04d8a86d76125d70b1e445/_typography.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/.sass-cache/b17cfc8f2f692ca944bdfcaed15220cf78b09c99/style.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/.sass-cache/d69ec8be0a74b90aa26ec05a08d2f01daa24c3bd/_base.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/.sass-cache/d69ec8be0a74b90aa26ec05a08d2f01daa24c3bd/_mixins.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/.sass-cache/d69ec8be0a74b90aa26ec05a08d2f01daa24c3bd/_variables.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/ie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/buttons/icons/cross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/buttons/icons/key.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/buttons/icons/tick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/buttons/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/buttons/screen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/fancy-type/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/fancy-type/screen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/icons/doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/icons/email.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/icons/external.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/icons/feed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/icons/im.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/icons/pdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/icons/visited.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/icons/xls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/link-icons/screen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/rtl/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/plugins/rtl/screen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/screen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/src/forms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/src/grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/src/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/src/ie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/src/print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/src/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/blueprint-css/src/typography.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/jquery.fancybox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/nouislider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/slick.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/theme-color/bridge-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/theme-color/dark-red-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/theme-color/default-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/theme-color/green-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/theme-color/orange-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/theme-color/pink-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/theme-color/purple-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/theme-color/red-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/theme-color/violet-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/theme-color/yellow-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/favicon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/agents/agent-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/agents/agent-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/agents/agent-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/agents/agent-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/banner-ads.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/blog-img-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/blog-img-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/blog-img-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/client-brand-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/client-brand-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/client-brand-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/client-brand-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/client-brand-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/big/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/big/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/big/11 - Copy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/big/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/big/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/big/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/big/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/big/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/big/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/big/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/big/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/big/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/fancybox_buttons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/fancybox_loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/fancybox_loading@2x.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/fancybox_overlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/fancybox_sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/fancybox_sprite@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/small/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/small/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/small/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/small/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/small/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/small/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/small/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/small/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/small/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/small/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/small/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/gallery/small/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/item/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/item/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/item/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/item/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/item/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/item/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/property-header-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/property-view-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/signin-bg.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/img/slider/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/slider/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/slider/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/slider/3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/img/slider/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/slider/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/slider/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/slider/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/slider/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/slider/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/testimonial-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/testimonial-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/testimonial-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/testimonial-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/jquery.fancybox.pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/jquery.mixitup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/nouislider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/slick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/base/_base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/base/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/base/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/layouts/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/layouts/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/layouts/_nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/modules/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/modules/_responsive.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/modules/_sections.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/modules/_theme-color.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/modules/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shAutoloader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushAS3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushAppleScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushBash.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushCSharp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushColdFusion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushCpp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushCss.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushDelphi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushDiff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushErlang.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushGroovy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushJScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushJava.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushJavaFX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushPerl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushPhp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushPlain.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushPowerShell.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushPython.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushRuby.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushSass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushScala.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushSql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushVb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shBrushXml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/scripts/shLegacy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/styles/shCore.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/styles/shCoreDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/styles/shCoreDjango.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/styles/shCoreEclipse.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/styles/shCoreEmacs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/styles/shCoreFadeToGrey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/styles/shCoreMDUltra.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/styles/shCoreMidnight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/styles/shCoreRDark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/styles/shThemeDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/styles/shThemeDjango.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/styles/shThemeEclipse.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/styles/shThemeEmacs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/styles/shThemeFadeToGrey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/styles/shThemeMDUltra.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/styles/shThemeMidnight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/syntax-highlighter/styles/shThemeRDark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_category.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,6 +897,14 @@
       <workItem from="1608724436759" duration="3500000" />
       <workItem from="1609244880749" duration="14008000" />
       <workItem from="1609263627271" duration="135000" />
+      <workItem from="1609265535348" duration="178000" />
+      <workItem from="1609368362920" duration="1133000" />
+      <workItem from="1609371772627" duration="96000" />
+      <workItem from="1609371942727" duration="87000" />
+      <workItem from="1609494809727" duration="86000" />
+      <workItem from="1609495058417" duration="5604000" />
+      <workItem from="1609504642089" duration="7240000" />
+      <workItem from="1609598668522" duration="16274000" />
     </task>
     <task id="LOCAL-00001" summary="template added">
       <created>1609245461098</created>
@@ -279,7 +913,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609245461098</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="template parçalama">
+      <created>1609265632929</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609265632929</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +942,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit" />
     <MESSAGE value="template added" />
-    <option name="LAST_COMMIT_MESSAGE" value="template added" />
+    <MESSAGE value="template parçalama" />
+    <option name="LAST_COMMIT_MESSAGE" value="template parçalama" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
