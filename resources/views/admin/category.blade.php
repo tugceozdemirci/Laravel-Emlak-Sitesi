@@ -25,7 +25,7 @@
                 <div class="col-md-12 col-sm-12 ">
                     <div class="x_panel">
                         <div class="x_title">
-                            <h2>Category List</h2>
+                            <a href="{{route('admin_category_add')}}" type="button" class="btn btn-success btn-xs">Add Category</a>
                             <ul class="nav navbar-right panel_toolbox">
                                 <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                 </li>
@@ -45,9 +45,6 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="card-box table-responsive">
-                                        <p class="text-muted font-13 m-b-30">
-                                            DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function: <code>$().DataTable();</code>
-                                        </p>
                                         <table id="datatable" class="table table-striped table-bordered" style="width:100%">
                                                         <tr>
                                                             <th>id</th>
@@ -65,8 +62,8 @@
                                                             <td>{{$rs -> parent_id}} </td>
                                                             <td>{{$rs -> title}} </td>
                                                             <td>{{$rs -> status}} </td>
-                                                            <td>Edit </td>
-                                                            <td>Delete </td>
+                                                            <td><a href="{{route('admin_category_edit',['id'=> $rs->id])}}"> Edit </a></td>
+                                                            <td> <a href="{{route('admin_category_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete! Are you sure?')"> Delete </a></td>
                                                         </tr>
                                                         @endforeach
                                                     </table>

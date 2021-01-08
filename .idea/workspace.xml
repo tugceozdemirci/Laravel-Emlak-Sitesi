@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6289cc95-4cb0-460d-8bc1-1de36bb66863" name="Default Changelist" comment="admin login işlemi">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_05_093044_create_categories_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/_blank.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/category.blade.php" afterDir="false" />
+    <list default="true" id="6289cc95-4cb0-460d-8bc1-1de36bb66863" name="Default Changelist" comment="category list oluşturuldu">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -225,6 +222,11 @@
       <workItem from="1609784756387" duration="596000" />
       <workItem from="1609837024607" duration="7783000" />
       <workItem from="1609861706929" duration="12318000" />
+      <workItem from="1609878635227" duration="6745000" />
+      <workItem from="1609960051075" duration="35000" />
+      <workItem from="1609972425958" duration="3126000" />
+      <workItem from="1610034593381" duration="111000" />
+      <workItem from="1610108076574" duration="13323000" />
     </task>
     <task id="LOCAL-00001" summary="template added">
       <created>1609245461098</created>
@@ -254,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609634936480</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="category list oluşturuldu">
+      <created>1609878779837</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609878779837</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +288,8 @@
     <MESSAGE value="template parçalama" />
     <MESSAGE value="template hataları düzeltildi" />
     <MESSAGE value="admin login işlemi" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin login işlemi" />
+    <MESSAGE value="category list oluşturuldu" />
+    <option name="LAST_COMMIT_MESSAGE" value="category list oluşturuldu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
