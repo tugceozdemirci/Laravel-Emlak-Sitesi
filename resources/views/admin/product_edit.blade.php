@@ -1,13 +1,13 @@
 @extends('layouts.admin')
 
-@section('title', 'Add Product')
+@section('title', 'Edit Product')
 @section('content')
     <!-- page content -->
     <div class="right_col" role="main">
         <div class="">
             <div class="page-title">
                 <div class="title_left">
-                    <h3>Add Product</h3>
+                    <h3>Edit Product</h3>
                 </div>
 
                 <div class="title_right">
@@ -51,7 +51,7 @@
                                     </div>
                                     <div class="x_content">
                                         <br />
-                                        <form class="form-horizontal form-label-left" action="{{route('admin_product_store')}}" method="post" enctype="multipart/form-data">
+                                        <form class="form-horizontal form-label-left" action="{{route('admin_product_update', ['id'=> $data -> id ])}}" method="post" enctype="multipart/form-data">
                                             @csrf
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-3 col-sm-3 ">Parent</label>
@@ -66,13 +66,14 @@
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-3 col-sm-3 ">Title</label>
                                                 <div class="col-md-9 col-sm-9 ">
-                                                    <input type="text" name="title" class="form-control" placeholder="Default Input">
+                                                    <input type="text" name="title" class="form-control" value="{{$data->title}}" placeholder="Default Input">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="control-label col-md-3 col-sm-3 ">Status</label>
                                                 <div class="col-md-9 col-sm-9 ">
                                                     <select class="form-control" name="status">
+                                                        <option selected="selected">True</option>
                                                         <option>True</option>
                                                         <option>False</option>
                                                     </select>
@@ -81,49 +82,50 @@
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-3 col-sm-3 ">Keywords</label>
                                                 <div class="col-md-9 col-sm-9 ">
-                                                    <input type="text" name="keywords" class="form-control" placeholder="Default Input">
+                                                    <input type="text" name="keywords" class="form-control" value="{{$data->keywords}}" placeholder="Default Input">
                                                 </div>
                                             </div>
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-3 col-sm-3 ">Description</label>
                                                 <div class="col-md-9 col-sm-9 ">
-                                                    <input type="text" name="description" class="form-control" placeholder="Default Input">
+                                                    <input type="text" name="description" class="form-control" value="{{$data->description}}" placeholder="Default Input">
                                                 </div>
                                             </div>
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-3 col-sm-3 ">Price</label>
                                                 <div class="col-md-9 col-sm-9 ">
-                                                    <input type="number" name="budget" class="form-control" placeholder="Default Input" value="0">
+                                                    <input type="number" name="budget" class="form-control" value="{{$data->budget}}" placeholder="Default Input" value="0">
                                                 </div>
                                             </div>
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-3 col-sm-3 ">Area</label>
                                                 <div class="col-md-9 col-sm-9 ">
-                                                    <input type="number" name="area" class="form-control" placeholder="Default Input" value="0">
+                                                    <input type="number" name="area" class="form-control" placeholder="Default Input" value="{{$data->area}}">
                                                 </div>
                                             </div>
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-3 col-sm-3 ">Location</label>
                                                 <div class="col-md-9 col-sm-9 ">
-                                                    <input type="text" name="location" class="form-control" placeholder="Default Input">
+                                                    <input type="text" name="location" class="form-control" placeholder="Default Input" value="{{$data->location}}">
                                                 </div>
                                             </div>
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-3 col-sm-3 ">Floor</label>
                                                 <div class="col-md-9 col-sm-9 ">
-                                                    <input type="number" name="floor" class="form-control" placeholder="Default Input" value="0">
+                                                    <input type="number" name="floor" class="form-control" placeholder="Default Input" value="{{$data->floor}}">
                                                 </div>
                                             </div>
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-3 col-sm-3 ">Room</label>
                                                 <div class="col-md-9 col-sm-9 ">
-                                                    <input type="text" name="room" class="form-control" placeholder="Default Input">
+                                                    <input type="text" name="room" class="form-control" placeholder="Default Input" value="{{$data->room}}">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="control-label col-md-3 col-sm-3 ">Bathroom</label>
                                                 <div class="col-md-9 col-sm-9 ">
                                                     <select class="form-control" name="bathroom">
+                                                        <option selected="selected">Not</option>
                                                         <option>Not</option>
                                                         <option>1</option>
                                                         <option>2</option>
@@ -137,6 +139,7 @@
                                                 <label class="control-label col-md-3 col-sm-3 ">Balcony</label>
                                                 <div class="col-md-9 col-sm-9 ">
                                                     <select class="form-control" name="balcony">
+                                                        <option selected="selected">Not</option>
                                                         <option>Not</option>
                                                         <option>1</option>
                                                         <option>2</option>
@@ -150,6 +153,7 @@
                                                 <label class="control-label col-md-3 col-sm-3 ">Heating</label>
                                                 <div class="col-md-9 col-sm-9 ">
                                                     <select class="form-control" name="heating">
+                                                        <option selected="selected">True</option>
                                                         <option>True</option>
                                                         <option>False</option>
                                                     </select>
@@ -159,6 +163,7 @@
                                                 <label class="control-label col-md-3 col-sm-3 ">Garden</label>
                                                 <div class="col-md-9 col-sm-9 ">
                                                     <select class="form-control" name="garden">
+                                                        <option selected="selected">True</option>
                                                         <option>True</option>
                                                         <option>False</option>
                                                     </select>
@@ -168,6 +173,7 @@
                                                 <label class="control-label col-md-3 col-sm-3 ">Garage</label>
                                                 <div class="col-md-9 col-sm-9 ">
                                                     <select class="form-control" name="garage">
+                                                        <option selected="selected">True</option>
                                                         <option>True</option>
                                                         <option>False</option>
                                                     </select>
@@ -176,19 +182,22 @@
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-3 col-sm-3 ">Image</label>
                                                 <div class="col-md-9 col-sm-9 ">
-                                                    <input type="file" name="image" class="form-control" placeholder="Default Input">
+                                                    <input type="file" name="image" class="form-control" placeholder="Default Input" value="{{$data->image}}">
                                                 </div>
+                                                @if ($rs->image)
+                                                    <img src="{{Storage::url($rs->image)}}" height="60" alt="">
+                                                @endif
                                             </div>
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-3 col-sm-3 ">Detail</label>
                                                 <div class="col-md-9 col-sm-9 ">
-                                                    <input type="text" name="detail" class="form-control" placeholder="Default Input">
+                                                    <input type="text" name="detail" class="form-control" placeholder="Default Input" value="{{$data->detail}}">
                                                 </div>
                                             </div>
                                             <div class="ln_solid"></div>
                                             <div class="form-group">
                                                 <div class="col-md-9 col-sm-9  offset-md-3">
-                                                    <button type="submit" class="btn btn-success">Add Product</button>
+                                                    <button type="submit" class="btn btn-success">Update Product</button>
                                                 </div>
                                             </div>
 

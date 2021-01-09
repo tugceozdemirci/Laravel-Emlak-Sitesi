@@ -51,7 +51,7 @@
                                     </div>
                                     <div class="x_content">
                                         <br />
-                                        <form class="form-horizontal form-label-left" action="{{route('admin_category_update',['id'=>$data->id])}}" method="post">
+                                        <form class="form-horizontal form-label-left" action="{{route('admin_category_update',['id'=>$data->id])}}" method="post" >
                                             @csrf
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-3 col-sm-3 ">Parent</label>

@@ -3,9 +3,12 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
 {
@@ -27,7 +30,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        $datalist = Product::all();
+        $datalist = Category::all();
         return view('admin.product_add', ['datalist'=> $datalist]);
     }
 
@@ -40,16 +43,14 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $data = new Product();
-        $data->parent_id = $request->input('parent_id');
         $data->title = $request->input('title');
         $data->keywords = $request->input('keywords');
         $data->description = $request->input('description');
-        $data->image = $request->input('image');
         $data->category_id = $request->input('category_id');
         $data->user_id = Auth::id();
         $data->area = $request->input('area');
         $data->location = $request->input('location');
-        $data->price = $request->input('price');
+        $data->budget = $request->input('budget');
         $data->bathroom = $request->input('bathroom');
         $data->balcony = $request->input('balcony');
         $data->garden = $request->input('garden');
@@ -58,6 +59,11 @@ class ProductController extends Controller
         $data->room = $request->input('room');
         $data->heating = $request->input('heating');
         $data->detail = $request->input('detail');
+        $data->image = Storage::putFile('image', $request->file('image'));
+
+
+        $data->save();
+        return redirect()->route('admin_products');
     }
 
     /**
@@ -77,9 +83,12 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function edit(Product $product)
+    public function edit(Product $product, $id)
     {
-        //
+        $data = Product::find($id);
+        $datalist = Category::all();
+
+        return view('admin.product_edit',['data'=> $data, 'datalist'=>$datalist]);
     }
 
     /**
@@ -89,9 +98,30 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(Request $request,Product $product, $id)
     {
-        //
+        $data = Product::find($id);
+        $data->title = $request -> input('title');
+        $data->keywords = $request->input('keywords');
+        $data->description = $request->input('description');
+        $data->category_id = $request->input('category_id');
+        $data->user_id = Auth::id();
+        $data->area = $request->input('area');
+        $data->location = $request->input('location');
+        $data->budget = $request->input('budget');
+        $data->bathroom = $request->input('bathroom');
+        $data->balcony = $request->input('balcony');
+        $data->garden = $request->input('garden');
+        $data->garage = $request->input('garage');
+        $data->floor = $request->input('floor');
+        $data->room = $request->input('room');
+        $data->heating = $request->input('heating');
+        $data->detail = $request->input('detail');
+        $data->image = Storage::putFile('image', $request->file('image'));
+
+
+        $data->save();
+        return redirect()->route('admin_products');
     }
 
     /**
@@ -100,8 +130,10 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Product $product)
+    public function destroy(Product $product, $id)
     {
-        //
+        DB::table('products')->where('id', '=', $id)->delete();
+        return redirect()-> route('admin_products');
+
     }
 }

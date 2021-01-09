@@ -24,7 +24,7 @@ class CreateProductsTable extends Migration
             $table->integer('user_id')->nullable();
             $table->integer('area')->nullable();
             $table->string('location',200)->nullable();
-            $table->float('price')->nullable();
+            $table->float('budget')->nullable()->default('0.0');
             $table->string('bathroom')->nullable();
             $table->string('balcony')->nullable();
             $table->string('garden')->nullable()->default('False');

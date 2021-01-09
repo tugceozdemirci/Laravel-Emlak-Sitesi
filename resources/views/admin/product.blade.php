@@ -49,7 +49,6 @@
                                                         <tr>
                                                             <th>id</th>
                                                             <th>Parent</th>
-                                                            <th>User id</th>
                                                             <th>Title(s)</th>
                                                             <th>Status</th>
                                                             <th>Price</th>
@@ -72,10 +71,9 @@
                                                         <tr>
                                                             <td>{{$rs -> id}} </td>
                                                             <td>{{$rs -> parent_id}}</td>
-                                                            <td>{{$rs->user_id}}</td>
                                                             <td>{{$rs -> title}} </td>
                                                             <td>{{$rs -> status}} </td>
-                                                            <td>{{$rs -> price}} </td>
+                                                            <td>{{$rs -> budget}} </td>
                                                             <td>{{$rs -> area}} </td>
                                                             <td>{{$rs -> location}} </td>
                                                             <td>{{$rs -> floor}} </td>
@@ -85,7 +83,11 @@
                                                             <td>{{$rs -> heating}} </td>
                                                             <td>{{$rs -> garden}} </td>
                                                             <td>{{$rs -> garage}} </td>
-                                                            <td>{{$rs -> image}} </td>
+                                                            <td>
+                                                                @if ($rs->image)
+                                                                    <img src="{{Storage::url($rs->image)}}" height="30" alt="">
+                                                                @endif
+                                                            </td>
                                                             <td><a href="{{route('admin_product_edit',['id'=> $rs->id])}}"> Edit </a></td>
                                                             <td> <a href="{{route('admin_product_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete! Are you sure?')"> Delete </a></td>
                                                         </tr>
