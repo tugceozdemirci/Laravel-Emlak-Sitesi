@@ -60,8 +60,6 @@ class ProductController extends Controller
         $data->heating = $request->input('heating');
         $data->detail = $request->input('detail');
         $data->image = Storage::putFile('image', $request->file('image'));
-
-
         $data->save();
         return redirect()->route('admin_products');
     }

@@ -1,14 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6289cc95-4cb0-460d-8bc1-1de36bb66863" name="Default Changelist" comment="product add,delete ve edit düzenlendi">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/product_edit.blade.php" afterDir="false" />
+    <list default="true" id="6289cc95-4cb0-460d-8bc1-1de36bb66863" name="Default Changelist" comment="product image upload and display yapıldı">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ImageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_14_113433_create_images_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_14_113719_image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/Ekran görüntüsü 2021-01-29 102851.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/Ekran görüntüsü 2021-01-29 102911.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/Ekran görüntüsü 2021-01-29 102931.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/Ekran görüntüsü 2021-01-29 103000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/Ekran görüntüsü 2021-01-29 103048.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/gallery.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/image_add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_08_162039_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_08_162039_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-bs/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-bs/License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-bs/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-bs/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-bs/css/dataTables.bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-bs/js/dataTables.bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons-bs/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons-bs/License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons-bs/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons-bs/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons/License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons/js/buttons.colVis.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons/js/buttons.colVis.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons/js/buttons.flash.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons/js/buttons.flash.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons/js/buttons.html5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons/js/buttons.html5.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons/js/buttons.print.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons/js/buttons.print.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons/js/dataTables.buttons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-buttons/js/dataTables.buttons.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-fixedheader-bs/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-fixedheader-bs/License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-fixedheader-bs/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-fixedheader-bs/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-fixedheader/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-fixedheader/License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-fixedheader/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-fixedheader/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-keytable/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-keytable/License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-keytable/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-keytable/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-keytable/js/dataTables.keyTable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-responsive-bs/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-responsive-bs/License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-responsive-bs/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-responsive-bs/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-responsive/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-responsive/License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-responsive/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-responsive/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-responsive/js/dataTables.responsive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-responsive/js/dataTables.responsive.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-scroller-bs/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-scroller-bs/License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-scroller-bs/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-scroller-bs/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-scroller/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-scroller/License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-scroller/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-scroller/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-scroller/js/dataTables.scroller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net-scroller/js/dataTables.scroller.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net/License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net/js/jquery.dataTables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/vendors/datatables.net/js/jquery.dataTables.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/product_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +260,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="C:\Program Files\nodejs" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Database" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -237,7 +330,23 @@
       <workItem from="1610108076574" duration="15737000" />
       <workItem from="1610131793515" duration="71000" />
       <workItem from="1610202272365" duration="19119000" />
-      <workItem from="1610229292799" duration="4217000" />
+      <workItem from="1610229292799" duration="4640000" />
+      <workItem from="1610290056897" duration="1810000" />
+      <workItem from="1610312234080" duration="407000" />
+      <workItem from="1610393808180" duration="890000" />
+      <workItem from="1610476848479" duration="6000" />
+      <workItem from="1610621156535" duration="12325000" />
+      <workItem from="1610721333324" duration="19000" />
+      <workItem from="1610738892792" duration="576000" />
+      <workItem from="1610915386519" duration="336000" />
+      <workItem from="1610918142543" duration="596000" />
+      <workItem from="1611250860269" duration="7984000" />
+      <workItem from="1611865131316" duration="3875000" />
+      <workItem from="1611869486845" duration="376000" />
+      <workItem from="1611870188236" duration="44000" />
+      <workItem from="1611904404387" duration="16953000" />
+      <workItem from="1611951622413" duration="154000" />
+      <workItem from="1611952532641" duration="620000" />
     </task>
     <task id="LOCAL-00001" summary="template added">
       <created>1609245461098</created>
@@ -288,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610225845513</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="product image upload and display yapıldı">
+      <created>1610234009742</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610234009742</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +432,8 @@
     <MESSAGE value="category list oluşturuldu" />
     <MESSAGE value="category add,delete ve edit düzenlendi" />
     <MESSAGE value="product add,delete ve edit düzenlendi" />
-    <option name="LAST_COMMIT_MESSAGE" value="product add,delete ve edit düzenlendi" />
+    <MESSAGE value="product image upload and display yapıldı" />
+    <option name="LAST_COMMIT_MESSAGE" value="product image upload and display yapıldı" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

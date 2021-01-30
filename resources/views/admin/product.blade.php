@@ -62,6 +62,7 @@
                                                             <th>Garden</th>
                                                             <th>Garage</th>
                                                             <th>Image</th>
+                                                            <th>Image Gallery</th>
                                                             <th>Edit</th>
                                                             <th>Delete</th>
                                                         </tr>
@@ -70,7 +71,7 @@
                                                         @foreach($datalist as $rs)
                                                         <tr>
                                                             <td>{{$rs -> id}} </td>
-                                                            <td>{{$rs -> parent_id}}</td>
+                                                            <td>{{$rs -> category_id}}</td>
                                                             <td>{{$rs -> title}} </td>
                                                             <td>{{$rs -> status}} </td>
                                                             <td>{{$rs -> budget}} </td>
@@ -87,6 +88,10 @@
                                                                 @if ($rs->image)
                                                                     <img src="{{Storage::url($rs->image)}}" height="30" alt="">
                                                                 @endif
+                                                            </td>
+                                                            <td>
+                                                                <a href="{{route('admin_image_add',['product_id'=> $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100, height=700')" >
+                                                                    <img src="{{asset('assets/admin/images')}}/gallery.png" height="25"> </a>
                                                             </td>
                                                             <td><a href="{{route('admin_product_edit',['id'=> $rs->id])}}"> Edit </a></td>
                                                             <td> <a href="{{route('admin_product_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete! Are you sure?')"> Delete </a></td>
@@ -110,9 +115,18 @@
 @endsection
 
 @section('footer')
-    <script function() {
-            $('').DataTable();
-    }
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
 
 
     @endsection

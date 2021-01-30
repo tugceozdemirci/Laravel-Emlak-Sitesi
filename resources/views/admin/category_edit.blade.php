@@ -31,7 +31,7 @@
                             <div class="clearfix"></div>
                         </div>
                         <div class="x_content">
-                            <div class="col-md-6 ">
+                            <div class="col-md-12 ">
                                 <div class="x_panel">
                                     <div class="x_title">
                                         <ul class="nav navbar-right panel_toolbox">
@@ -54,8 +54,8 @@
                                         <form class="form-horizontal form-label-left" action="{{route('admin_category_update',['id'=>$data->id])}}" method="post" >
                                             @csrf
                                             <div class="form-group row ">
-                                                <label class="control-label col-md-3 col-sm-3 ">Parent</label>
-                                                <div class="col-md-9 col-sm-9 ">
+                                                <label class="control-label col-md-1 col-sm-1 ">Parent</label>
+                                                <div class="col-md-11 col-sm-11 ">
                                                     <select class="form-control" name="parent_id">
                                                         <option value="{{$data->parent_id}}" selected="selected">..</option>
                                                         <option value="0"> Main Category</option>
@@ -66,26 +66,26 @@
                                                 </div>
                                             </div>
                                             <div class="form-group row ">
-                                                <label class="control-label col-md-3 col-sm-3 ">Title</label>
-                                                <div class="col-md-9 col-sm-9 ">
+                                                <label class="control-label col-md-1 col-sm-1 ">Title</label>
+                                                <div class="col-md-11 col-sm-11 ">
                                                     <input type="text" name="title" class="form-control" value="{{$data->title}}" placeholder="Default Input">
                                                 </div>
                                             </div>
                                             <div class="form-group row ">
-                                                <label class="control-label col-md-3 col-sm-3 ">Keywords</label>
-                                                <div class="col-md-9 col-sm-9 ">
+                                                <label class="control-label col-md-1 col-sm-1 ">Keywords</label>
+                                                <div class="col-md-11 col-sm-11 ">
                                                     <input type="text" name="keywords" class="form-control" value="{{$data->keywords}}" placeholder="Default Input">
                                                 </div>
                                             </div>
                                             <div class="form-group row ">
-                                                <label class="control-label col-md-3 col-sm-3 ">Description</label>
-                                                <div class="col-md-9 col-sm-9 ">
+                                                <label class="control-label col-md-1 col-sm-1 ">Description</label>
+                                                <div class="col-md-11 col-sm-11 ">
                                                     <input type="text" name="description" class="form-control" Value="{{$data->description}}" placeholder="Default Input">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label class="control-label col-md-3 col-sm-3 ">Status</label>
-                                                <div class="col-md-9 col-sm-9 ">
+                                                <label class="control-label col-md-1 col-sm-1 ">Status</label>
+                                                <div class="col-md-11 col-sm-11 ">
                                                     <select class="form-control" name="status">
                                                         <option selected="selected">{{$data->status}}</option>
                                                         <option>True</option>
@@ -95,7 +95,7 @@
                                             </div>
                                             <div class="ln_solid"></div>
                                             <div class="form-group">
-                                                <div class="col-md-9 col-sm-9  offset-md-3">
+                                                <div class="col-md-12 col-sm-12">
                                                     <button type="submit" class="btn btn-success">Update Category</button>
                                                 </div>
                                             </div>
