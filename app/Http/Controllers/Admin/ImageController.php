@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Image;
-use App\Models\Product;
+use App\Models\Apartment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
@@ -27,12 +27,12 @@ class ImageController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create($product_id)
+    public function create($apartment_id)
     {
-        $data = Product::find($product_id);
-        $images= DB::table('images')->where('product_id','=','$product_id')->get();
+        $data = Apartment::find($apartment_id);
+        $images = DB::table('images')->where('apartment_id','=', $apartment_id)->get();
 
-        return view('admin.image_add', ['data' => $data, 'images' => $images]);
+        return view('admin.image_add', [ 'data' => $data , 'images' => $images ]);
     }
 
     /**
@@ -42,14 +42,15 @@ class ImageController extends Controller
      * @return \Illuminate\Http\Response
      * @param  \App\Models\Image  $image
      */
-    public function store(Request $request,$product_id)
+    public function store(Request $request, $apartment_id)
     {
-        $data = new Image;
-        $data->title = $request->input('title');
-        $data->product_id = $product_id;
-        $data->image = Storage::putFile('images', $request->file('image'));
-        $data->save();
-        return redirect()->route('admin_image_add', ['product_id'=>$product_id]);
+        $data = new Image();
+        $data-> title = $request->input('title');
+        $data-> apartment_id = $apartment_id;
+        $data-> image = Storage::putFile('images', $request->file('image'));
+
+        $data-> save();
+        return redirect()->route('admin_image_add', ['apartment_id' => $apartment_id]);
     }
 
     /**
@@ -90,13 +91,15 @@ class ImageController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\Image  $image
+     * @param \App\Models\Apartment $apartment
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Image $image,$id,$product_id)
+    public function destroy(Image $image, $id, $apartment_id)
     {
-        $data = Product::find($id);
+        $data = Image::find($id);
         $data->delete();
 
-        return redirect()->route('admin_image_add',['id'=> $id, 'product_id' => $product_id]);
+        return redirect()->route('admin_image_add',['apartment_id' => $apartment_id]);
     }
 }
+

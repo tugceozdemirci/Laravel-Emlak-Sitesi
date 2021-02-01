@@ -4,7 +4,7 @@
         <h3>General</h3>
         <ul class="nav side-menu">
             <li><a href="{{ route('admin_category') }}"><i class="fa fa-table"></i> Category </a></li>
-            <li><a href="{{route('admin_products')}}"><i class="fa fa-desktop"></i> Products </a></li>
+            <li><a href="{{route('admin_apartments')}}"><i class="fa fa-desktop"></i> Apartments </a></li>
         </ul>
     </div>
 
@@ -13,8 +13,9 @@
 
 <!-- /menu footer buttons -->
 <div class="sidebar-footer hidden-small">
-    <a data-toggle="tooltip" data-placement="top" title="Settings">
-        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+    <a href="{{route('admin_setting')}}" data-toggle="tooltip" data-placement="top" title="Settings">
+            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+        </a>
     </a>
     <a data-toggle="tooltip" data-placement="top" title="FullScreen">
         <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
@@ -45,8 +46,7 @@
                         <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
 
                             <a class="dropdown-item"  href="javascript:;"> Profile</a>
-                            <a class="dropdown-item"  href="javascript:;">
-                                <span class="badge bg-red pull-right">50%</span>
+                            <a class="dropdown-item"  href="{{route('admin_setting')}}">
                                 <span>Settings</span>
                             </a>
                             <a class="dropdown-item"  href="javascript:;">Help</a>

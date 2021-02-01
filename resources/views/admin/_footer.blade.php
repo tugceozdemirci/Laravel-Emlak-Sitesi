@@ -49,3 +49,4 @@
 
 <!-- Custom Theme Scripts -->
 <script src="{{ asset('assets') }}/admin/build/js/custom.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>

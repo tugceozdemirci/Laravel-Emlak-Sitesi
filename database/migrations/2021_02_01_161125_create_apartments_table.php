@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProductsTable extends Migration
+class CreateApartmentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,8 @@ class CreateProductsTable extends Migration
      */
     public function up()
     {
-        Schema::create('products', function (Blueprint $table) {
+        Schema::create('apartments', function (Blueprint $table) {
+
             $table->id()->autoIncrement();
             $table->string('title',150);
             $table->string('keywords')->nullable();
@@ -24,14 +25,14 @@ class CreateProductsTable extends Migration
             $table->integer('user_id')->nullable();
             $table->integer('area')->nullable();
             $table->string('location',200)->nullable();
-            $table->float('budget')->nullable()->default('0.0');
+            $table->float('price')->nullable();
             $table->string('bathroom')->nullable();
             $table->string('balcony')->nullable();
             $table->string('garden')->nullable()->default('False');
             $table->string('garage')->nullable()->default('False');
             $table->integer('floor')->nullable()->default('0');
-            $table->integer('room')->nullable();
-            $table->string('heating')->nullable();
+            $table->string('room')->nullable();
+            $table->string('heating')->nullable()->default('False');
             $table->text('detail')->nullable();
             $table->timestamps();
         });
@@ -44,6 +45,6 @@ class CreateProductsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('products');
+        Schema::dropIfExists('apartments');
     }
 }

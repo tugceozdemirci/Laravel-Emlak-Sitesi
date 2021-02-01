@@ -67,19 +67,19 @@
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-1 col-sm-1 ">Title</label>
                                                 <div class="col-md-11 col-sm-11 ">
-                                                    <input type="text" name="title" class="form-control" placeholder="Default Input">
+                                                    <textarea name="title" id="editor1" class="ckeditor"></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-1 col-sm-1 ">Keywords</label>
                                                 <div class="col-md-11 col-sm-11 ">
-                                                    <input type="text" name="keywords" class="form-control" placeholder="Default Input">
+                                                    <textarea  name="keywords" id="editor1" class="ckeditor"></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-1 col-sm-1 ">Description</label>
                                                 <div class="col-md-11 col-sm-11 ">
-                                                    <input type="text" name="description" class="form-control" placeholder="Default Input">
+                                                    <textarea name="description" id="editor1" class="ckeditor"></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group row">

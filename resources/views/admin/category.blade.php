@@ -51,8 +51,7 @@
                                                             <th>Parent</th>
                                                             <th>Title(s)</th>
                                                             <th>Status</th>
-                                                            <th>Edit</th>
-                                                            <th>Delete</th>
+                                                            <th colspan="2">Actions</th>
                                                         </tr>
                                                         </thead>
                                                         <tbody>
@@ -62,8 +61,14 @@
                                                             <td>{{$rs -> parent_id}} </td>
                                                             <td>{{$rs -> title}} </td>
                                                             <td>{{$rs -> status}} </td>
-                                                            <td><a href="{{route('admin_category_edit',['id'=> $rs->id])}}"> Edit </a></td>
-                                                            <td> <a href="{{route('admin_category_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete! Are you sure?')"> Delete </a></td>
+                                                            <td><a href="{{route('admin_category_edit',['id'=> $rs->id])}}">
+                                                                    <img src="{{asset('assets/admin/images')}}/edit.png" height="25">
+                                                                </a>
+                                                            </td>
+                                                            <td><a href="{{route('admin_category_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete! Are you sure?')">
+                                                                    <img src="{{asset('assets/admin/images')}}/trash.png" height="25">
+                                                                </a>
+                                                            </td>
                                                         </tr>
                                                         @endforeach
                                                     </table>
@@ -96,6 +101,6 @@
     <script src="../vendors/iCheck/icheck.min.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
-
+    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
 
 @endsection

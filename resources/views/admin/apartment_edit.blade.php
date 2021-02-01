@@ -1,13 +1,13 @@
 @extends('layouts.admin')
 
-@section('title', 'Edit Product')
+@section('title', 'Edit Apartment')
 @section('content')
     <!-- page content -->
     <div class="right_col" role="main">
         <div class="">
             <div class="page-title">
                 <div class="title_left">
-                    <h3>Edit Product</h3>
+                    <h3>Edit Apartment</h3>
                 </div>
 
                 <div class="title_right">
@@ -51,7 +51,7 @@
                                     </div>
                                     <div class="x_content">
                                         <br />
-                                        <form class="form-horizontal form-label-left" action="{{route('admin_product_update', ['id'=> $data -> id ])}}" method="post" enctype="multipart/form-data">
+                                        <form class="form-horizontal form-label-left" action="{{route('admin_apartment_update', ['id'=> $data -> id ])}}" method="post" enctype="multipart/form-data">
                                             @csrf
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-1 col-sm-1 ">Parent</label>
@@ -66,35 +66,31 @@
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-1 col-sm-1 ">Title</label>
                                                 <div class="col-md-11 col-sm-11 ">
-                                                    <input type="text" name="title" class="form-control" value="{{$data->title}}" placeholder="Default Input">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label class="control-label col-md-1 col-sm-1 ">Status</label>
-                                                <div class="col-md-11 col-sm-11 ">
-                                                    <select class="form-control" name="status">
-                                                        <option selected="selected">True</option>
-                                                        <option>True</option>
-                                                        <option>False</option>
-                                                    </select>
+                                                    <input type="text" name="title" class="form-control" placeholder="Default Input" value="{{$data->title}}">
                                                 </div>
                                             </div>
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-1 col-sm-1 ">Keywords</label>
                                                 <div class="col-md-11 col-sm-11 ">
-                                                    <input type="text" name="keywords" class="form-control" value="{{$data->keywords}}" placeholder="Default Input">
+                                                    <textarea name="keywords" id="editor1" class="ckeditor">{{$data->keywords}}</textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-1 col-sm-1 ">Description</label>
                                                 <div class="col-md-11 col-sm-11 ">
-                                                    <input type="text" name="description" class="form-control" value="{{$data->description}}" placeholder="Default Input">
+                                                    <textarea name="description" id="editor1" class="ckeditor">{{$data->description}}</textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row ">
+                                                <label class="control-label col-md-1 col-sm-1 ">Detail</label>
+                                                <div class="col-md-11 col-sm-11 ">
+                                                    <textarea name="detail" id="editor1" class="ckeditor">{{$data->detail}}</textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-1 col-sm-1 ">Price</label>
                                                 <div class="col-md-11 col-sm-11 ">
-                                                    <input type="number" name="budget" class="form-control" value="{{$data->budget}}" placeholder="Default Input" value="0">
+                                                    <input type="text" name="budget" class="form-control" value="{{$data->price}}" placeholder="Default Input" value="0">
                                                 </div>
                                             </div>
                                             <div class="form-group row ">
@@ -179,6 +175,16 @@
                                                     </select>
                                                 </div>
                                             </div>
+                                            <div class="form-group row">
+                                                <label class="control-label col-md-1 col-sm-1 ">Status</label>
+                                                <div class="col-md-11 col-sm-11 ">
+                                                    <select class="form-control" name="status">
+                                                        <option selected="selected">True</option>
+                                                        <option>True</option>
+                                                        <option>False</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-1 col-sm-1 ">Image</label>
                                                 <div class="col-md-11 col-sm-11 ">
@@ -188,16 +194,11 @@
                                                     <img src="{{Storage::url($rs->image)}}" height="60" alt="">
                                                 @endif
                                             </div>
-                                            <div class="form-group row ">
-                                                <label class="control-label col-md-1 col-sm-1 ">Detail</label>
-                                                <div class="col-md-11 col-sm-11 ">
-                                                    <input type="text" name="detail" class="form-control" placeholder="Default Input" value="{{$data->detail}}">
-                                                </div>
-                                            </div>
+
                                             <div class="ln_solid"></div>
                                             <div class="form-group">
                                                 <div class="col-md-12 col-sm-12">
-                                                    <button type="submit" class="btn btn-success">Update Product</button>
+                                                    <button type="submit" class="btn btn-success">Update Apartment</button>
                                                 </div>
                                             </div>
 

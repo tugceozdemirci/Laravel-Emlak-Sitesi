@@ -26,7 +26,7 @@
             <div class="row">
                 <form class="x_panel">
                     <div class="x_title">
-                        <h3>Product: {{$data->title}}</h3>
+                        <h3>Apartment: {{$data->title}}</h3>
                         <div class="clearfix"></div>
                     </div>
                     <div class="col-md-12 ">
@@ -49,7 +49,7 @@
                             </div>
                             <div class="clearfix"></div>
                             <div class="x_content">
-                                <form action="{{route('admin_image_store',['product_id'=>$data->id])}}" method="post" enctype="multipart/form-data">
+                                <form action="{{route('admin_image_store',['apartment_id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                                     @csrf
                                     <div class="form-group row ">
                                         <label class="control-label col-md-1 col-sm-1 ">Title</label>
@@ -86,16 +86,16 @@
                                                 <tbody>
                                                     @foreach($images as $rs)
                                                         <tr>
-                                                            <td>{{$rs -> id}} </td>                                                                    <
+                                                            <td>{{$rs -> id}}</td>
                                                             <td>{{$rs -> title}} </td>
                                                             <td>
-                                                                @if ($rs-> $image)
-                                                                <img src="{{Storage::url($rs->image)}}" height="50" alt="">
+                                                                @if($rs-> image)
+                                                                    <img src="{{Storage::url($rs -> image )}}" height="50" alt="">
                                                                 @endif
                                                             </td>
                                                             <td>
-                                                                <a href="{{route('admin_image_delete',['id'=> $rs->id, 'product_id'=>$data->id])}}" onclick="return confirm('Record will be Delete! Are you sure?')">
-                                                                <i class="fa-trash"></i> Delete </a>
+                                                                    <a href="{{route('admin_image_delete',['id'=> $rs->id, 'apartment_id'=> $data->id])}}" onclick="return confirm('Record will be Delete! Are you sure?')">
+                                                                    <img src="{{asset('assets/admin/images')}}/trash.png" height="30"></a>
                                                             </td>
                                                         </tr>
                                                     @endforeach

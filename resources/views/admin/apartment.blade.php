@@ -1,13 +1,13 @@
 @extends('layouts.admin')
 
-@section('title', 'Product List')
+@section('title', 'Apartment List')
 @section('content')
     <!-- page content -->
     <div class="right_col" role="main">
         <div class="">
             <div class="page-title">
                 <div class="title_left">
-                    <h3>Products</h3>
+                    <h3>Apartments</h3>
                 </div>
 
                 <div class="title_right">
@@ -25,7 +25,7 @@
                 <div class="col-md-12 col-sm-12 ">
                     <div class="x_panel">
                         <div class="x_title">
-                            <a href="{{route('admin_product_add')}}" type="button" class="btn btn-success btn-xs">Add Product</a>
+                            <a href="{{route('admin_apartment_add')}}" type="button" class="btn btn-success btn-xs">Add Apartment</a>
                             <ul class="nav navbar-right panel_toolbox">
                                 <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                 </li>
@@ -49,7 +49,7 @@
                                                         <tr>
                                                             <th>id</th>
                                                             <th>Parent</th>
-                                                            <th>Title(s)</th>
+                                                            <th>Title</th>
                                                             <th>Status</th>
                                                             <th>Price</th>
                                                             <th>Area</th>
@@ -63,18 +63,17 @@
                                                             <th>Garage</th>
                                                             <th>Image</th>
                                                             <th>Image Gallery</th>
-                                                            <th>Edit</th>
-                                                            <th>Delete</th>
+                                                            <th colspan="2" > Actions</th>
                                                         </tr>
                                                         </thead>
                                                         <tbody>
                                                         @foreach($datalist as $rs)
                                                         <tr>
-                                                            <td>{{$rs -> id}} </td>
+                                                            <td>{{$rs -> id}}</td>
                                                             <td>{{$rs -> category_id}}</td>
                                                             <td>{{$rs -> title}} </td>
                                                             <td>{{$rs -> status}} </td>
-                                                            <td>{{$rs -> budget}} </td>
+                                                            <td>{{$rs -> price}} </td>
                                                             <td>{{$rs -> area}} </td>
                                                             <td>{{$rs -> location}} </td>
                                                             <td>{{$rs -> floor}} </td>
@@ -90,11 +89,17 @@
                                                                 @endif
                                                             </td>
                                                             <td>
-                                                                <a href="{{route('admin_image_add',['product_id'=> $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100, height=700')" >
+                                                                <a href="{{route('admin_image_add',['apartment_id'=> $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100, height=700')" >
                                                                     <img src="{{asset('assets/admin/images')}}/gallery.png" height="25"> </a>
                                                             </td>
-                                                            <td><a href="{{route('admin_product_edit',['id'=> $rs->id])}}"> Edit </a></td>
-                                                            <td> <a href="{{route('admin_product_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete! Are you sure?')"> Delete </a></td>
+                                                            <td>
+                                                                <a href="{{route('admin_apartment_edit',['id'=> $rs->id])}}">
+                                                                <img src="{{asset('assets/admin/images')}}/edit.png" height="25"> </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="{{route('admin_apartment_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete! Are you sure?')">
+                                                                <img src="{{asset('assets/admin/images')}}/trash.png" height="25"> </a>
+                                                            </td>
                                                         </tr>
                                                         @endforeach
                                                     </table>
@@ -127,6 +132,7 @@
     <script src="../vendors/iCheck/icheck.min.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
 
 
     @endsection
