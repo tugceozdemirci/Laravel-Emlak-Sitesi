@@ -188,7 +188,7 @@
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-1 col-sm-1 ">Image</label>
                                                 <div class="col-md-11 col-sm-11 ">
-                                                    <input type="file" name="image" class="form-control" placeholder="Default Input" value="{{$data->image}}">
+                                                    <input type="file" name="image" class="form-control" placeholder="Default Input" >
                                                 </div>
                                                 @if ($rs->image)
                                                     <img src="{{Storage::url($rs->image)}}" height="60" alt="">
