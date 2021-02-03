@@ -48,7 +48,7 @@
                                         <table id="datatable" class="table table-striped table-bordered" style="width:100%">
                                                         <tr>
                                                             <th>id</th>
-                                                            <th>Parent</th>
+                                                            <th>Category</th>
                                                             <th>Title</th>
                                                             <th>Status</th>
                                                             <th>Price</th>
@@ -70,7 +70,9 @@
                                                         @foreach($datalist as $rs)
                                                         <tr>
                                                             <td>{{$rs -> id}}</td>
-                                                            <td>{{$rs -> category->title}}</td>
+                                                            <td>
+                                                                {{ \App\Http\Controllers\Admin\CategoryController::getParentsTree($rs->category, $rs->category->title) }}
+                                                            </td>
                                                             <td>{{$rs -> title}} </td>
                                                             <td>{{$rs -> status}} </td>
                                                             <td>{{$rs -> price}} </td>

@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6289cc95-4cb0-460d-8bc1-1de36bb66863" name="Default Changelist" comment="setting site ayarlari">
+    <list default="true" id="6289cc95-4cb0-460d-8bc1-1de36bb66863" name="Default Changelist" comment="category product one to many ilişkisi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Apartment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Apartment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ApartmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ApartmentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/images/Ekran görüntüsü 2021-01-29 102851.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/images/Ekran görüntüsü 2021-01-29 102911.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/images/Ekran görüntüsü 2021-01-29 102931.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/images/Ekran görüntüsü 2021-01-29 103000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/images/Ekran görüntüsü 2021-01-29 103048.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/apartment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/apartment.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/setting_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/setting_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/apartment_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/apartment_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/apartment_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/apartment_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +272,9 @@
       <workItem from="1612109067566" duration="829000" />
       <workItem from="1612181712507" duration="16218000" />
       <workItem from="1612201700855" duration="3860000" />
-      <workItem from="1612257675655" duration="20276000" />
+      <workItem from="1612257675655" duration="27241000" />
+      <workItem from="1612312615659" duration="73000" />
+      <workItem from="1612351875712" duration="16874000" />
     </task>
     <task id="LOCAL-00001" summary="template added">
       <created>1609245461098</created>
@@ -331,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612208650696</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="category product one to many ilişkisi">
+      <created>1612289085890</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1612289085890</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +384,8 @@
     <MESSAGE value="product image upload and display yapıldı" />
     <MESSAGE value="product image gallery" />
     <MESSAGE value="setting site ayarlari" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting site ayarlari" />
+    <MESSAGE value="category product one to many ilişkisi" />
+    <option name="LAST_COMMIT_MESSAGE" value="category product one to many ilişkisi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

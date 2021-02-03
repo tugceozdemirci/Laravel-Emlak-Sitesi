@@ -30,7 +30,7 @@ class ApartmentController extends Controller
      */
     public function create()
     {
-        $datalist = Category::all();
+        $datalist = Category::with('children')->get();
         return view('admin.apartment_add', ['datalist' => $datalist]);
     }
 
@@ -84,7 +84,7 @@ class ApartmentController extends Controller
     public function edit(Apartment $apartment, $id)
     {
         $data = Apartment::find($id);
-        $datalist = Category::all();
+        $datalist = Category::with('children')->get();
 
         return view('admin.apartment_edit', ['data' => $data, 'datalist' => $datalist]);
     }

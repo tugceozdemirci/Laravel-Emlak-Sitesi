@@ -1,12 +1,12 @@
 @extends('layouts.home')
 
-@section('title','Tuğçe Emlak')
+@section('title', $setting->title)
 
 @section('description')
-    Türkiye'nin en geniş ve en güncel ev alım satım sitesi...
+    {{$setting->description}}
 @endsection
 
-@section('keywords','ev,villa,dubleks,bahçe,çiflik evi,apartman,metrekare,yalı,müstakil,site,oda,')
+@section('keywords', $setting->keywords)
 
 @section('content')
     <section class="py-5">
