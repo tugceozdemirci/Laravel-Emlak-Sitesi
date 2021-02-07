@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,9 @@ Route::get('/',function () {
 
 Route::get('/home',[HomeController::class,'index'])->name('home');
 Route::get('/aboutus',[HomeController::class,'aboutus'])->name('aboutus');
+Route::get('/contact',[HomeController::class,'contact'])->name('contact');
+
+
 
 
 //Route::get('/test/{id}/{name}',[HomeController::class,'test'])->where(['id'=>'[0-9])+','name'=>'[A-Za-z]+']);
@@ -68,6 +72,12 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('setting', [\App\Http\Controllers\Admin\SettingController::class, 'index'])->name('admin_setting');
     Route::post('setting/update', [\App\Http\Controllers\Admin\SettingController::class, 'update'])->name('admin_setting_update');
 
+
+});
+
+Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(function() {
+
+    Route::get('/' , [UserController::class, 'index'])->name('myprofile');
 
 });
 

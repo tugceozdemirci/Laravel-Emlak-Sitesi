@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Apartment;
 use App\Models\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -10,27 +11,37 @@ use Illuminate\Support\Facades\Auth;
 class HomeController extends Controller
 {
     //
-    public static function categorylist()
-    {
+    public static function categorylist(){
         return Category::where('parent_id', '=',0)->with('children')->get();
+    }
+
+    public static function getSetting(){
+        return Setting::first();
     }
 
 
     public function index()
     {
         $setting = Setting::first();
-        return view('home.index',['data'=> $setting]);
+        return view('home.index',['setting'=> $setting, 'page'=>'home']);
     }
     public function aboutus()
     {
-        return view('home.about');
+        $setting = Setting::first();
+        return view('home.about', ['setting'=> $setting]);
     }
+    public function contact()
+    {
+        $setting = Setting::first();
+        return view('home.contact', ['setting'=> $setting]);
+    }
+
     public function login()
     {
         return view('admin.login');
     }
-    public function logincheck(Request $request)
-    {
+
+    public function logincheck(Request $request){
         if ($request->isMethod('post'))
         {
             $credentials = $request->only('email','password');
@@ -51,8 +62,7 @@ class HomeController extends Controller
         }
     }
 
-    public function logout(Request $request)
-    {
+    public function logout(Request $request){
         Auth::logout();
 
         $request->session()->invalidate();
@@ -63,18 +73,9 @@ class HomeController extends Controller
     }
 
 
-    public function test($id,$name)
-    {
+    public function test($id,$name){
         $data['id']=$id;
         $data['name']=$name;
         return view('home.test',$data);
-        /*
-        echo "Id number:",$id;
-        echo "<br>Name:",$name;
-        for ($i=1;$i<=$id;$i++)
-        {
-            echo "<br> $i - $name";
-        }
-        */
     }
 }
