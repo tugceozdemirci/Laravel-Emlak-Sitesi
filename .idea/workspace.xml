@@ -1,39 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6289cc95-4cb0-460d-8bc1-1de36bb66863" name="Default Changelist" comment="Category Tree Sub Category gösterimi">
-      <change afterPath="$PROJECT_DIR$/TEMPS/multi-2-0/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/about.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/about2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/contact.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/facebook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/instagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/slider/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/slider/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/slider/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/slider/2-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/slider/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/slider/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/slider/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/twitter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/contact.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" afterDir="false" />
+    <list default="true" id="6289cc95-4cb0-460d-8bc1-1de36bb66863" name="Default Changelist" comment="Home Page Setting Meta tags User ve sayfa linkleri">
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/appx.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/about-us.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/promo-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_blank.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +163,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="C:\Program Files\nodejs" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -197,6 +171,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Php\Laravel2j\resources\views\layouts" />
       <recent name="C:\Php\Laravel2j\resources\views\admin" />
     </key>
   </component>
@@ -294,7 +269,7 @@
       <workItem from="1612598415772" duration="8238000" />
       <workItem from="1612609477316" duration="13094000" />
       <workItem from="1612697016428" duration="23000" />
-      <workItem from="1612707204934" duration="5201000" />
+      <workItem from="1612707204934" duration="6538000" />
     </task>
     <task id="LOCAL-00001" summary="template added">
       <created>1609245461098</created>
@@ -380,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612380607108</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Home Page Setting Meta tags User ve sayfa linkleri">
+      <created>1612712576238</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1612712576238</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,7 +395,8 @@
     <MESSAGE value="setting site ayarlari" />
     <MESSAGE value="category product one to many ilişkisi" />
     <MESSAGE value="Category Tree Sub Category gösterimi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Category Tree Sub Category gösterimi" />
+    <MESSAGE value="Home Page Setting Meta tags User ve sayfa linkleri" />
+    <option name="LAST_COMMIT_MESSAGE" value="Home Page Setting Meta tags User ve sayfa linkleri" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -11,21 +11,15 @@
             </div>
         </div>
     </section>
-    <section class="py-5">
-        <div class="container py-5">
-            <div class="column">
-                <div class="dropdown-menu-left" id="userprofilemenu">
-                    <ul><h1 class="lined">Text page</h1>
-                        <li><a href=""> My Profile</a></li>
-                        <li><a href=""> My Message</a></li>
-                        <li><a href=""> </a></li>
-                        <li><a href="{{route('logout')}}"> Logout</a></li>
-                    </ul>
-                </div>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-4">
+                @include('home.usermenu')
             </div>
-
-
+            <div class="col-md-8">
+                @include('profile.show')
             </div>
+        </div>
     </section>
 
 @endsection
