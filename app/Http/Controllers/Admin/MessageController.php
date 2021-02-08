@@ -60,8 +60,9 @@ class MessageController extends Controller
     public function edit(Message $message, $id)
     {
         $data = Message::find($id);
-
-        return view('admin.messages_edit', ['data'=> $data]);
+        $data->status = 'Read';
+        $data->save();
+        return view('admin.messages_edit', ['data' => $data]);
     }
 
     /**
@@ -71,11 +72,13 @@ class MessageController extends Controller
      * @param  \App\Models\Message  $message
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Message $message ,$id)
+    public function update(Request $request, Message $message , $id)
     {
         $data = Message::find($id);
+        $data->note = $request->input('note');
         $data->save();
-        return back()->with('success' , 'message Read');
+
+        return back()->with('success', 'Message Updated');
     }
 
     /**
@@ -91,3 +94,4 @@ class MessageController extends Controller
         return redirect()->route('admin_message')->with('succes', 'Message Deleted');
     }
 }
+

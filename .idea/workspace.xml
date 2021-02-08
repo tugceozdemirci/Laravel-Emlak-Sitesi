@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6289cc95-4cb0-460d-8bc1-1de36bb66863" name="Default Changelist" comment="User Profile Ek Alanlar Ekleme Güncelleme">
+    <list default="true" id="6289cc95-4cb0-460d-8bc1-1de36bb66863" name="Default Changelist" comment="Referans ve Contact Sayfaları">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MessageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_07_195756_create_messages_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_08_004902_create_messages_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_07_200438_message.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_08_005523_message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/messages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/messages.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/messages_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/messages_edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -268,7 +271,7 @@
       <workItem from="1612609477316" duration="13094000" />
       <workItem from="1612697016428" duration="23000" />
       <workItem from="1612707204934" duration="19481000" />
-      <workItem from="1612736081920" duration="7609000" />
+      <workItem from="1612736081920" duration="10800000" />
     </task>
     <task id="LOCAL-00001" summary="template added">
       <created>1609245461098</created>
@@ -375,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612743571572</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Referans ve Contact Sayfaları">
+      <created>1612744173230</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1612744173230</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,7 +421,8 @@
     <MESSAGE value="Home Page Setting Meta tags User ve sayfa linkleri" />
     <MESSAGE value="User Profile Page Oluşturma Jetstream Sayfasını Panele Alma" />
     <MESSAGE value="User Profile Ek Alanlar Ekleme Güncelleme" />
-    <option name="LAST_COMMIT_MESSAGE" value="User Profile Ek Alanlar Ekleme Güncelleme" />
+    <MESSAGE value="Referans ve Contact Sayfaları" />
+    <option name="LAST_COMMIT_MESSAGE" value="Referans ve Contact Sayfaları" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

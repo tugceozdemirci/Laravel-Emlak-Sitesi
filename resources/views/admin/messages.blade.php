@@ -53,7 +53,8 @@
                                                             <th>Email</th>
                                                             <th>Subject</th>
                                                             <th>Message</th>
-                                                            <th colspan="2" > Actions</th>
+                                                            <th>Admin Note</th>
+                                                            <th colspan="3" > Actions</th>
                                                         </tr>
                                                         </thead>
                                                         <tbody>
@@ -65,6 +66,9 @@
                                                             <td>{{$rs -> email}} </td>
                                                             <td>{{$rs -> subject}} </td>
                                                             <td>{{$rs -> message}} </td>
+                                                            <td>{{$rs -> note}} </td>
+                                                            <td>{{$rs -> status}} </td>
+
                                                             <td>
                                                                 <a href="{{route('admin_message_edit',['id'=> $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=800, height=600')" >
                                                                     <img src="{{asset('assets/admin/images')}}/edit.png" height="25"> </a>

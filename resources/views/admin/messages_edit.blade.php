@@ -11,10 +11,10 @@
                 <div class="x_panel">
                     <div class="x_content">
                         <br />
-                        <form class="form-horizontal form-label-left" action="{{route('admin_message_update', ['id'=> $data -> id ])}}" method="post" enctype="multipart/form-data">
+                        <form class="form-horizontal form-label-left" action="{{route('admin_message_update', ['id' => $data -> id ])}}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group row ">
-                                <table id="datatable" class="table table-striped table-bordered" style="width:100%">
+                                <tr id="datatable" class="table table-striped table-bordered" style="width:100%">
                                     <tr>
                                         <th>Id</th> <td>{{$data -> id}}</td>
                                     </tr>
@@ -33,15 +33,21 @@
                                     <tr>
                                         <th>Message</th> <td>{{$data -> message}} </td>
                                     </tr>
-                                </table>
-                                <div class="ln_solid"></div>
-                                <div class="form-group">
-                                    <div class="col-md-12 col-sm-12" >
-                                        <button type="submit" class="btn btn-success">Update Message</button>
-                                    </div>
-                                </div>
+                                    <tr>
+                                        <th>Admin Note</th>
+                                        <td>
+                                            <textarea id="note" name="note">{{$data -> note}}</textarea>
+                                        </td>
+                                    </tr>
+                                </tr>
                             </div>
                         </form>
+                        <div class="ln_solid"></div>
+                        <div class="form-group">
+                            <div class="col-md-12 col-sm-12" >
+                                <button type="submit" class="btn btn-success">Update Message</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
