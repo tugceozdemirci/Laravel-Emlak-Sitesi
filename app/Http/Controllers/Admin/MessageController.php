@@ -71,9 +71,11 @@ class MessageController extends Controller
      * @param  \App\Models\Message  $message
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Message $message)
+    public function update(Request $request, Message $message ,$id)
     {
-
+        $data = Message::find($id);
+        $data->save();
+        return back()->with('success' , 'message Read');
     }
 
     /**

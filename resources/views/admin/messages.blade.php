@@ -66,7 +66,7 @@
                                                             <td>{{$rs -> subject}} </td>
                                                             <td>{{$rs -> message}} </td>
                                                             <td>
-                                                                <a href="{{route('admin_message_edit',['id'=> $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100, height=700')" >
+                                                                <a href="{{route('admin_message_edit',['id'=> $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=800, height=600')" >
                                                                     <img src="{{asset('assets/admin/images')}}/edit.png" height="25"> </a>
                                                             </td>
                                                             <td>
