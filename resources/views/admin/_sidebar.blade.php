@@ -5,6 +5,7 @@
         <ul class="nav side-menu">
             <li><a href="{{ route('admin_category') }}"><i class="fa fa-table"></i> Category </a></li>
             <li><a href="{{route('admin_apartments')}}"><i class="fa fa-desktop"></i> Apartments </a></li>
+            <li><a href="{{route('admin_message')}}"><i class="fa fa-edit"></i> Contact Messages</a></li>
         </ul>
     </div>
 
@@ -55,7 +56,7 @@
                     </li>
 
                     <li role="presentation" class="nav-item dropdown open">
-                        <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
+                        <a href="{{route('admin_message')}}" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
                             <i class="fa fa-envelope-o"></i>
                             <span class="badge bg-green">6</span>
                         </a>

@@ -13,6 +13,7 @@
                 <h5 class="lined lined-dark mb-3">Hakkımızda</h5>
                 <li><a href="#" class="footer-link text-small">Üyelik Sözleşmesi</a>
                 <li><a href="#" class="footer-link text-small">Gizlilik Politikası</a></li>
+                <li><a href="{{route('references')}}" class="footer-link text-small">Referanslarımız</a></li>
 
             </div>
             <div class="col-lg-4 col-md-6 mb-4" class="colomn">

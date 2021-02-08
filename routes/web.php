@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\MessageController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
@@ -26,6 +27,9 @@ Route::get('/',function () {
 Route::get('/home',[HomeController::class,'index'])->name('home');
 Route::get('/aboutus',[HomeController::class,'aboutus'])->name('aboutus');
 Route::get('/contact',[HomeController::class,'contact'])->name('contact');
+Route::get('/references',[HomeController::class,'references'])->name('references');
+Route::get('/logout', [HomeController::class, 'logout'])->name('logout');
+Route::post('/sendmessage',[HomeController::class,'sendmessage'])->name('sendmessage');
 
 
 
@@ -59,6 +63,15 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 
     });
 
+    #Message
+    Route::prefix('messages')->group(function() {
+        Route::get('/', [MessageController::class, 'index'])->name('admin_message');
+        Route::get('edit/{id}', [MessageController::class, 'edit'])->name('admin_message_edit');
+        Route::post('update/{id}', [MessageController::class, 'update'])->name('admin_message_update');
+        Route::get('delete/{id}', [MessageController::class, 'destroy'])->name('admin_message_delete');
+        Route::get('show', [MessageController::class, 'show'])->name('admin_message_show');
+    });
+
     #Product Image Gallery
     Route::prefix('image')->group(function() {
         Route::get('create/{apartment_id}' , [\App\Http\Controllers\Admin\ImageController::class, 'create'])->name('admin_image_add');
@@ -78,6 +91,12 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(function() {
 
     Route::get('/' , [UserController::class, 'index'])->name('myprofile');
+
+});
+
+Route::middleware('auth')->prefix('user')->namespace('user')->group(function() {
+
+    Route::get('/profile' , [UserController::class, 'index'])->name('userprofile');
 
 });
 
