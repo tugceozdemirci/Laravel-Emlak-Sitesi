@@ -6,6 +6,7 @@
             <li><a href="{{ route('admin_category') }}"><i class="fa fa-table"></i> Category </a></li>
             <li><a href="{{route('admin_apartments')}}"><i class="fa fa-desktop"></i> Apartments </a></li>
             <li><a href="{{route('admin_message')}}"><i class="fa fa-edit"></i> Contact Messages</a></li>
+            <li><a href="{{route('admin_user')}}"><i class="fa fa-bar-chart-o"></i>Users</a></li>
         </ul>
     </div>
 
