@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\ImageController;
 use App\Http\Controllers\Admin\MessageController;
+use App\Http\Controllers\ApartmentController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
@@ -102,6 +103,26 @@ Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(fu
 Route::middleware('auth')->prefix('user')->namespace('user')->group(function() {
 
     Route::get('/profile' , [UserController::class, 'index'])->name('userprofile');
+
+    #Apartment
+    Route::prefix('apartment')->group(function() {
+        Route::get('/' , [ApartmentController::class, 'index'])->name('user_apartments');
+        Route::get('create' , [ApartmentController::class, 'create'])->name('user_apartment_add');
+        Route::post('store' , [ApartmentController::class, 'store'])->name('user_apartment_store');
+        Route::get('edit/{id}' , [ApartmentController::class, 'edit'])->name('user_apartment_edit');
+        Route::post('update/{id}' , [ApartmentController::class, 'update'])->name('user_apartment_update');
+        Route::get('delete/{id}' , [ApartmentController::class, 'destroy'])->name('user_apartment_delete');
+        Route::get('show' , [ApartmentController::class, 'show'])->name('user_apartment_show');
+
+    });
+    #Product Image Gallery
+    Route::prefix('image')->group(function() {
+        Route::get('create/{apartment_id}' , [ImageController::class, 'create'])->name('user_image_add');
+        Route::post('store/{apartment_id}' , [ImageController::class, 'store'])->name('user_image_store');
+        Route::get('delete/{id}/{apartment_id}' , [ImageController::class, 'destroy'])->name('user_image_delete');
+        Route::get('show' , [ImageController::class, 'show'])->name('user_image_show');
+
+    });
 
 });
 

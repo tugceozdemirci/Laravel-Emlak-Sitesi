@@ -91,7 +91,7 @@
                                             <div class="form-group row ">
                                                 <label class="control-label col-md-1 col-sm-1 ">Price</label>
                                                 <div class="col-md-11 col-sm-11 ">
-                                                    <input type="text" name="budget" class="form-control" value="{{$data->price}}" placeholder="Default Input" value="0">
+                                                    <input type="text" name="price" class="form-control" value="{{$data->price}}" placeholder="Default Input" value="0">
                                                 </div>
                                             </div>
                                             <div class="form-group row ">

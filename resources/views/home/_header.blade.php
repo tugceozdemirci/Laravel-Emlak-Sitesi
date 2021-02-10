@@ -38,7 +38,7 @@ $setting = \App\Http\Controllers\HomeController::getSetting()
                             <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu mt-0">
                                 <a href="{{route('myprofile')}}" class="dropdown-item small text-uppercase">My Account</a>
                                 <a href="#" class="dropdown-item small text-uppercase">Setting</a>
-                                <a href="#" class="dropdown-item small text-uppercase">Checkout</a>
+                                <a href="{{route('user_apartmets')}}" class="dropdown-item small text-uppercase">My Apartments</a>
                                 <a href="{{route('logout')}}" class="dropdown-item small text-uppercase">Logout</a>
                             </div>
                         </li>

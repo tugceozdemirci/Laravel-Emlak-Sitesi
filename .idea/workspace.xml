@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6289cc95-4cb0-460d-8bc1-1de36bb66863" name="Default Changelist" comment="Anasayfada Product Ürünlerinin Gösterilmesi">
+    <list default="true" id="6289cc95-4cb0-460d-8bc1-1de36bb66863" name="Default Changelist" comment="Product Detail Sayfası">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ApartmentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ImageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/apartment.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/apartment_add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/apartment_edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/user_apartment.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/user_apartment_image_add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/apartment_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/apartment_edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/product_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/product_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,6 +183,9 @@
       <recent name="C:\Php\Laravel2j\resources\views\admin" />
       <recent name="C:\Php\Laravel2j\resources\views\layouts" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Php\Laravel2j\resources\views\home" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -281,7 +293,7 @@
       <workItem from="1612941691400" duration="788000" />
       <workItem from="1612948398412" duration="4891000" />
       <workItem from="1612954597461" duration="2375000" />
-      <workItem from="1612957783695" duration="9003000" />
+      <workItem from="1612957783695" duration="16177000" />
     </task>
     <task id="LOCAL-00001" summary="template added">
       <created>1609245461098</created>
@@ -416,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612962605822</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Product Detail Sayfası">
+      <created>1612967104150</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1612967104150</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,7 +475,8 @@
     <MESSAGE value="Contact Mesajlar ve Admin Panelde Yönetimi" />
     <MESSAGE value="Category Product Ürünlerini Listeleme" />
     <MESSAGE value="Anasayfada Product Ürünlerinin Gösterilmesi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Anasayfada Product Ürünlerinin Gösterilmesi" />
+    <MESSAGE value="Product Detail Sayfası" />
+    <option name="LAST_COMMIT_MESSAGE" value="Product Detail Sayfası" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
