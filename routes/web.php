@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\ImageController;
 use App\Http\Controllers\Admin\MessageController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -30,6 +31,10 @@ Route::get('/contact',[HomeController::class,'contact'])->name('contact');
 Route::get('/references',[HomeController::class,'references'])->name('references');
 Route::get('/logout', [HomeController::class, 'logout'])->name('logout');
 Route::post('/sendmessage',[HomeController::class,'sendmessage'])->name('sendmessage');
+Route::get('/apartment/{id}', [HomeController::class, 'apartment'])->name('apartment');
+Route::get('/categoryapartments/{id}', [HomeController::class, 'categoryapartments'])->name('categoryapartments');
+
+
 
 
 
@@ -74,10 +79,10 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 
     #Product Image Gallery
     Route::prefix('image')->group(function() {
-        Route::get('create/{apartment_id}' , [\App\Http\Controllers\Admin\ImageController::class, 'create'])->name('admin_image_add');
-        Route::post('store/{apartment_id}' , [\App\Http\Controllers\Admin\ImageController::class, 'store'])->name('admin_image_store');
-        Route::get('delete/{id}/{apartment_id}' , [\App\Http\Controllers\Admin\ImageController::class, 'destroy'])->name('admin_image_delete');
-        Route::get('show' , [\App\Http\Controllers\Admin\ImageController::class, 'show'])->name('admin_image_show');
+        Route::get('create/{apartment_id}' , [ImageController::class, 'create'])->name('admin_image_add');
+        Route::post('store/{apartment_id}' , [ImageController::class, 'store'])->name('admin_image_store');
+        Route::get('delete/{id}/{apartment_id}' , [ImageController::class, 'destroy'])->name('admin_image_delete');
+        Route::get('show' , [ImageController::class, 'show'])->name('admin_image_show');
 
     });
 

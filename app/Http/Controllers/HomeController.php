@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Apartment;
+use App\Models\Image;
 use App\Models\Message;
 use App\Models\Setting;
 use Illuminate\Http\Request;
@@ -20,11 +21,21 @@ class HomeController extends Controller
         return Setting::first();
     }
 
-
     public function index()
     {
         $setting = Setting::first();
+
         return view('home.index',['setting'=> $setting, 'page'=>'home']);
+    }
+    public function apartment($id){
+        $data = Apartment::find($id);
+        $datalist = Image::where('apartment_id', $id)->get();
+        return view('home.product_detail', ['data'=>$data, 'datalist'=>$datalist]);
+    }
+    public function categoryapartments($id){
+        $datalist = Apartment::where('category_id',$id)->get();
+        $data = Category::find($id);
+        return view('home.category_products',['data'=>$data, 'datalist'=>$datalist]);
     }
     public function aboutus()
     {

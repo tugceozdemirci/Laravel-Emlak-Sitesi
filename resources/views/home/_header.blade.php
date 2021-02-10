@@ -12,7 +12,7 @@ $setting = \App\Http\Controllers\HomeController::getSetting()
                     <li class="nav-item dropdown"><a id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4 dropdown-toggle">Satılık</a>
                         <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu mt-0">
                             @foreach($parentCategories as $rs)
-                                <a class="dropdown-item small text-uppercase">{{$rs->title}}</a>
+                                <a href="{{route('categoryapartments',['id'=> $rs->id])}}" class="dropdown-item small text-uppercase">{{$rs->title}}</a>
                             @endforeach
                         </div>
                     </li>

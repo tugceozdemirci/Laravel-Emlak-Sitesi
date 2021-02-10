@@ -44,12 +44,12 @@ class ImageController extends Controller
      */
     public function store(Request $request, $apartment_id)
     {
-        $data = new Image();
-        $data-> title = $request->input('title');
-        $data-> apartment_id = $apartment_id;
-        $data-> image = Storage::putFile('images', $request->file('image'));
+        $data = new Image;
+        $data->title = $request->input('title');
+        $data->apartment_id = $apartment_id;
+        $data->image = Storage::putFile('images', $request->file('image'));
+        $data->save();
 
-        $data-> save();
         return redirect()->route('admin_image_add', ['apartment_id' => $apartment_id]);
     }
 

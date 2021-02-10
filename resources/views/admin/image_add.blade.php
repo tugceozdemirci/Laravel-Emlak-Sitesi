@@ -49,18 +49,18 @@
                             </div>
                             <div class="clearfix"></div>
                             <div class="x_content">
-                                <form action="{{route('admin_image_store',['apartment_id'=>$data->id])}}" method="post" enctype="multipart/form-data">
+                                <form action="{{route('admin_image_store' , ['apartment_id'=> $data->id ])}}" method="post" enctype="multipart/form-data">
                                     @csrf
                                     <div class="form-group row ">
                                         <label class="control-label col-md-1 col-sm-1 ">Title</label>
                                         <div class="col-md-11 col-sm-11 ">
-                                            <input type="text" width="100%" name="title" class="form-control" placeholder="Default Input">
+                                            <input type="text" name="title" class="form-control" placeholder="Default Input">
                                         </div>
                                     </div>
                                     <div class="form-group row ">
                                         <label class="control-label col-md-1 col-sm-1 ">Image</label>
                                         <div class="col-md-11 col-sm-11 ">
-                                            <input type="file" width="100%" name="image" class="form-control" placeholder="Default Input">
+                                            <input type="file" name="image" class="form-control" >
                                         </div>
                                     </div>
                                     <div class="ln_solid"></div>
@@ -89,8 +89,8 @@
                                                             <td>{{$rs -> id}}</td>
                                                             <td>{{$rs -> title}} </td>
                                                             <td>
-                                                                @if($rs-> image)
-                                                                    <img src="{{Storage::url($rs -> image )}}" height="50" alt="">
+                                                                @if($data -> image)
+                                                                    <img src="{{ Storage::url($data -> image ) }}" height="50" alt="">
                                                                 @endif
                                                             </td>
                                                             <td>
