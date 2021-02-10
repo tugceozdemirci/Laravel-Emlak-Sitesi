@@ -9,24 +9,18 @@
 
 @section('content')
     @include('home._slider')
-    <section class="bg-gray py-5">
-        <div class="container py-5">
+    <section class="py-5 bg-gray">
+        <div class="container">
+            <h2 class="lined mb-4">İlanlar</h2>
             <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0"><a href="#" class="d-block"><img src="{{asset('assets')}}/img/blog1.jpg" alt="" class="img-fluid mb-4"></a>
-                    <h3 class="h5 mb-4"><a href="#" class="text-dark">Ücretsiz ilan ver</a></h3>
-
+            @foreach($last as $rs)
+                <div class="bg-gray col-md-5"><a href="#" class="d-block"><img src="{{Storage::url($rs->image)}}" alt="" class="img-fluid mb-4"></a>
+                    <h3 class="h5 mb-4"><a href="#" class="text-dark">{{$rs->title}}</a></h3>
+                    <h3 class="h5 mb-4">{{$rs->price}}</h3><a href="{{route('apartment', ['id'=>$rs->id])}}" class="btn btn-outline-primary btn-sm">View</a>
+                    <div class="border-bottom my-4"></div>
                 </div>
+            @endforeach
             </div>
         </div>
     </section>
-
-    <section class="py-5">
-        <div class="container py-5">
-            <h2 class="mb-5">Şehirler</h2>
-            <div class="row mb-2">
-
-            </div>
-        </div>
-    </section>
-
 @endsection

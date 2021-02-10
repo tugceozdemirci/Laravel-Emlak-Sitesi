@@ -24,8 +24,14 @@ class HomeController extends Controller
     public function index()
     {
         $setting = Setting::first();
+        $last = Apartment::select('id', 'title', 'image')->limit(6)->inRandomOrder()-> get();
+        $data = [
+            'setting' => $setting,
+            'page' => 'home',
+            'last' => $last
+        ];
 
-        return view('home.index',['setting'=> $setting, 'page'=>'home']);
+        return view('home.index',$data);
     }
     public function apartment($id){
         $data = Apartment::find($id);
