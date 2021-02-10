@@ -27,10 +27,8 @@ class HomeController extends Controller
         $last = Apartment::select('id', 'title', 'image')->limit(6)->inRandomOrder()-> get();
         $data = [
             'setting' => $setting,
-            'page' => 'home',
             'last' => $last
         ];
-
         return view('home.index', $data);
     }
     public function apartment($id){

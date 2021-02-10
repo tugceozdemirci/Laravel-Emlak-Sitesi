@@ -23,7 +23,7 @@ $setting = \App\Http\Controllers\HomeController::getSetting()
                     <li class="nav-item">
                         @auth
                             <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu mt-0">
-                                <strong class="text-uppercase">{{ Auth::user()->name }}</strong>
+                                <strong class="text-uppercase">{{ Auth::user()->name }}{{Auth::user()->roles->pluck('name')}}</strong>
                             </div>
                         @endauth
                         @guest
@@ -38,7 +38,7 @@ $setting = \App\Http\Controllers\HomeController::getSetting()
                             <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu mt-0">
                                 <a href="{{route('myprofile')}}" class="dropdown-item small text-uppercase">My Account</a>
                                 <a href="#" class="dropdown-item small text-uppercase">Setting</a>
-                                <a href="{{route('user_apartmets')}}" class="dropdown-item small text-uppercase">My Apartments</a>
+                                <a href="{{route('user_apartments')}}" class="dropdown-item small text-uppercase">My Apartments</a>
                                 <a href="{{route('logout')}}" class="dropdown-item small text-uppercase">Logout</a>
                             </div>
                         </li>

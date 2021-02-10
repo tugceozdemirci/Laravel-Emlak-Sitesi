@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6289cc95-4cb0-460d-8bc1-1de36bb66863" name="Default Changelist" comment="Product Detail Sayfası">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ApartmentController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ImageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/apartment.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/apartment_add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/apartment_edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/user_apartment.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/user_apartment_image_add.blade.php" afterDir="false" />
+    <list default="true" id="6289cc95-4cb0-460d-8bc1-1de36bb66863" name="Default Changelist" comment="User Product Ürün Yönetimi">
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_10_170928_create_role_user_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_10_171121_role_user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_10_175320_create_roles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_10_175446_role.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/apartment_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/apartment_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/product_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/product_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -293,7 +295,7 @@
       <workItem from="1612941691400" duration="788000" />
       <workItem from="1612948398412" duration="4891000" />
       <workItem from="1612954597461" duration="2375000" />
-      <workItem from="1612957783695" duration="16177000" />
+      <workItem from="1612957783695" duration="26263000" />
     </task>
     <task id="LOCAL-00001" summary="template added">
       <created>1609245461098</created>
@@ -435,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612967104150</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="User Product Ürün Yönetimi">
+      <created>1612975820525</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1612975820525</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,7 +485,8 @@
     <MESSAGE value="Category Product Ürünlerini Listeleme" />
     <MESSAGE value="Anasayfada Product Ürünlerinin Gösterilmesi" />
     <MESSAGE value="Product Detail Sayfası" />
-    <option name="LAST_COMMIT_MESSAGE" value="Product Detail Sayfası" />
+    <MESSAGE value="User Product Ürün Yönetimi" />
+    <option name="LAST_COMMIT_MESSAGE" value="User Product Ürün Yönetimi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
