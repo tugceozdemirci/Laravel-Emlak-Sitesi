@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6289cc95-4cb0-460d-8bc1-1de36bb66863" name="Default Changelist" comment="Category Product Ürünlerini Listeleme">
+    <list default="true" id="6289cc95-4cb0-460d-8bc1-1de36bb66863" name="Default Changelist" comment="Anasayfada Product Ürünlerinin Gösterilmesi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/category_products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/category_products.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/product_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/product_detail.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,7 +281,7 @@
       <workItem from="1612941691400" duration="788000" />
       <workItem from="1612948398412" duration="4891000" />
       <workItem from="1612954597461" duration="2375000" />
-      <workItem from="1612957783695" duration="4477000" />
+      <workItem from="1612957783695" duration="9003000" />
     </task>
     <task id="LOCAL-00001" summary="template added">
       <created>1609245461098</created>
@@ -409,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612960224971</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Anasayfada Product Ürünlerinin Gösterilmesi">
+      <created>1612962605822</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1612962605822</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,7 +455,8 @@
     <MESSAGE value="Referans ve Contact Sayfaları" />
     <MESSAGE value="Contact Mesajlar ve Admin Panelde Yönetimi" />
     <MESSAGE value="Category Product Ürünlerini Listeleme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Category Product Ürünlerini Listeleme" />
+    <MESSAGE value="Anasayfada Product Ürünlerinin Gösterilmesi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Anasayfada Product Ürünlerinin Gösterilmesi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

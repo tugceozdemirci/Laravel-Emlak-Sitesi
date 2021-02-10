@@ -31,11 +31,12 @@ class HomeController extends Controller
             'last' => $last
         ];
 
-        return view('home.index',$data);
+        return view('home.index', $data);
     }
     public function apartment($id){
         $data = Apartment::find($id);
         $datalist = Image::where('apartment_id', $id)->get();
+
         return view('home.product_detail', ['data'=>$data, 'datalist'=>$datalist]);
     }
     public function categoryapartments($id){
